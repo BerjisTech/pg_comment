@@ -5,8 +5,8 @@ require "pg_comment/version"
 Gem::Specification.new do |s|
   s.name        = "pg_comment"
   s.version     = PgComment::VERSION
-  s.authors     = ["Arthur Shagall"]
-  s.email       = ["arthur.shagall@gmail.com"]
+  s.authors     = ["Arthur Shagall","Benedict Ouma"]
+  s.email       = ["arthur.shagall@gmail.com","bo.kouru@gmail.com"]
   s.homepage    = "https://github.com/albertosaurus/pg_comment"
   s.summary     = 'Postgres Comments for Rails'
   s.description = 'Extends Rails migrations to support setting column and table comments. Pulls out comments into schema.rb'
@@ -18,8 +18,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency('activerecord', '~> 3.0')
-  s.add_dependency('rails', '~> 3.2')
+  s.add_dependency('activerecord', '>= 3.0')
+  s.add_dependency('rails', '>= 3.2')
   s.add_development_dependency('pg')
-  s.add_development_dependency('rspec-rails', '~> 3.4')
+  s.add_development_dependency('rspec-rails', '>= 3.4')
 end
