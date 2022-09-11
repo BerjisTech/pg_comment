@@ -7,11 +7,9 @@ Gem::Specification.new do |s|
   s.version     = PgComment::VERSION
   s.authors     = ["Arthur Shagall","Benedict Ouma"]
   s.email       = ["arthur.shagall@gmail.com","bo.kouru@gmail.com"]
-  s.homepage    = "https://github.com/albertosaurus/pg_comment"
+  s.homepage    = "https://github.com/BerjisTech/pg_comment"
   s.summary     = 'Postgres Comments for Rails'
   s.description = 'Extends Rails migrations to support setting column and table comments. Pulls out comments into schema.rb'
-
-  s.rubyforge_project = "pg_comment"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
