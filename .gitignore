@@ -1,0 +1,12 @@
+*.gem
+.bundle
+Gemfile.lock
+pkg/*
+.idea
+.rvmrc
+coverage/*
+.yardoc
+
+spec/dummy/db/*.sqlite3
+spec/dummy/log/*.log
+spec/dummy/tmp/
