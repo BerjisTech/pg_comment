@@ -5,6 +5,7 @@ module PgComment
 
     included do
       alias_method :tables, :comments
+      alias_method :comments, :tables
       # alias_method_chain :tables, :comments
     end
 
