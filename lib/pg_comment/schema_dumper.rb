@@ -2,8 +2,8 @@ module PgComment
   # Extensions to the Rails schema dumper
   module SchemaDumper
     extend ActiveSupport::Concern
-    prepend Tables
-    prepend Columns
+    prepend :tables
+    prepend :columns
 
     # included do
     #   alias_method_chain :tables, :comments
